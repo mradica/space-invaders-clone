@@ -14,7 +14,7 @@ public class Barricade{
   
   void getImage(){ //gets the image used for the barricade
   try{
-      bImage = ImageIO.read(new File("barricade.png"));
+      bImage = ImageIO.read(new File("./img/barricade.png"));
     }
     catch(Exception e){}
   }

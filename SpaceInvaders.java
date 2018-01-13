@@ -208,7 +208,7 @@ public class SpaceInvaders{
     mainMenu(); //starts off the game on the main menu
     sound.playSoundTrack(); //plays the soundtrack as soon as the game starts
     movementTimers(); //starts the timers, which move objects on the screen
-    window.setIconImage(new ImageIcon("Space_invader.png").getImage());
+    window.setIconImage(new ImageIcon("./img/Space_invader.png").getImage());
     window.setSize(1000, 600);
     window.setLocation(0,0);  
     window.setVisible(true);
@@ -222,7 +222,7 @@ public class SpaceInvaders{
     content.setBackground(Color.black);
     Image image = null;
     try{
-    image = ImageIO.read(new File("space_invaders_second_row.PNG"));
+    image = ImageIO.read(new File("./img/space_invaders_second_row.PNG"));
     }
     catch(Exception e){}
     JLabel picLabel = new JLabel(new ImageIcon(image)); //makes a label,which contains the picture shown in the main menu
@@ -387,10 +387,10 @@ public class SpaceInvaders{
     Image image3 = null;
     Image image4 = null;
     try{
-    image = ImageIO.read(new File("Untitled-7.png"));
-    image2 = ImageIO.read(new File("Untitled-8.png"));
-    image3 = ImageIO.read(new File("Untitled-9.png"));
-    image4 = ImageIO.read(new File("saucer.png"));
+    image = ImageIO.read(new File("./img/Untitled-7.png"));
+    image2 = ImageIO.read(new File("./img/Untitled-8.png"));
+    image3 = ImageIO.read(new File("./img/Untitled-9.png"));
+    image4 = ImageIO.read(new File("./img/saucer.png"));
     }
     catch(Exception e){}
     JLabel picLabel = new JLabel(new ImageIcon(image));
@@ -486,7 +486,7 @@ public class SpaceInvaders{
         sound.stopUFO(); //stops the UFO from making noise
         sound.playInvaderHit();
         try{
-          Image explosion = ImageIO.read(new File("invaderexplosion.png"));
+          Image explosion = ImageIO.read(new File("./img/invaderexplosion.png"));
           g.drawImage(explosion, saucer.getX() , 28 , null); //draws the explosion where the saucer was hit
         }
         catch(Exception e){
@@ -509,7 +509,7 @@ public class SpaceInvaders{
             if(hit[j][i] == false){
               sound.playInvaderHit(); //plays sound effect
               try{
-                Image explosion = ImageIO.read(new File("invaderexplosion.png")); //draws the explosion where impat was made
+                Image explosion = ImageIO.read(new File("./img/invaderexplosion.png")); //draws the explosion where impat was made
                 g.drawImage(explosion, xShot -25 , bulletY - 45 , null);
               }
               catch(Exception e){
@@ -551,7 +551,7 @@ public class SpaceInvaders{
         health --; //health of the ship is decreased
         sound.playShipHit(); //plays the sound for a ship hit
         try{
-      Image explosion = ImageIO.read(new File("64px-SpaceInvadersAlienExplosionDepiction copy.png"));
+      Image explosion = ImageIO.read(new File("./img/64px-SpaceInvadersAlienExplosionDepiction copy.png"));
       g.drawImage(explosion, invaderShot, inShotY + 50 , null); //draws an explosoin image on top of the ship at the spot where the bullet intersects the ship
     }
     catch(Exception e){

@@ -17,7 +17,7 @@ public class Ship{
   
   void drawExp(Graphics g){ //draws the exploded ship image, called when the ship is out of lives
     try{
-      image = ImageIO.read(new File("Untitled-1.png"));
+      image = ImageIO.read(new File("./img/Untitled-1.png"));
     }
     catch(Exception e){}
     g.drawImage(image, shipX, 500, null);
@@ -34,7 +34,7 @@ public class Ship{
   
   void getShipImage(){ // routine that imports the image used to draw the ship
   try{
-      shipImage = ImageIO.read(new File("Ship.png"));
+      shipImage = ImageIO.read(new File("./img/Ship.png"));
     }
     catch(Exception e){}
   }

@@ -34,21 +34,21 @@ public class Invader{
   void loadPictures(){ //loads up all of the images used to draw the aliens pictures. This is in a seperate routine from the method used
                        //to draw the invaders, so that the pictures are re loaded every time the program repaints
     try{
-      image1 = ImageIO.read(new File("Untitled-7.png"));
+      image1 = ImageIO.read(new File("./img/Untitled-7.png"));
     }
     catch(Exception e){
       System.out.print("image not read");
     }
     
     try{
-      image2 = ImageIO.read(new File("Untitled-8.png"));
+      image2 = ImageIO.read(new File("./img/Untitled-8.png"));
     }
     catch(Exception e){
       System.out.print("image not read");
     }
     
     try{
-      image3 = ImageIO.read(new File("Untitled-9.png"));
+      image3 = ImageIO.read(new File("./img/Untitled-9.png"));
     }
     catch(Exception e){
       System.out.print("image not read");
@@ -87,7 +87,7 @@ public class Invader{
   void drawExplosion(Graphics g){ //draws a new picture, whih is the explosion image for the invaders.
                                   //this method is called when the bullet intersects the invader's bounds
     try{
-      spaceInvaderGuy = ImageIO.read(new File("1206570436270960825johnny_automatic_battle.svg.med.png"));
+      spaceInvaderGuy = ImageIO.read(new File("./img/1206570436270960825johnny_automatic_battle.svg.med.png"));
     }
     catch(Exception e){
       System.out.print("image not read");

@@ -8,7 +8,7 @@ public class Sound{
   
   void playShot(){ //uses clips to play the sound used when the ship is shooting, called when space is pressed
     
-    File sound = new File("shoot.wav");
+    File sound = new File("./sound/shoot.wav");
     
     try{
       Clip clip = AudioSystem.getClip();
@@ -19,7 +19,7 @@ public class Sound{
   }
   
   void playInvaderHit(){ //used clips to play the sound used when an invader is hit
-    File sound = new File("invaderkilled.wav");
+    File sound = new File("./sound/invaderkilled.wav");
     try{
       Clip clip = AudioSystem.getClip();
       clip.open(AudioSystem.getAudioInputStream(sound));
@@ -29,7 +29,7 @@ public class Sound{
   }
   
   void playShipHit(){ //used clips to play the explosion sound when a ship is hit
-    File sound = new File("explosion.wav");
+    File sound = new File("./sound/explosion.wav");
     try{
       Clip clip = AudioSystem.getClip();
       clip.open(AudioSystem.getAudioInputStream(sound));
@@ -39,7 +39,7 @@ public class Sound{
   }
   
   void playSoundTrack(){ // plays the song used in the background during the game/menu, loops the song continuosly, unless the clip is called to stop
-    File sound = new File("01 Space Invaders Extreme - Menu Song.wav");
+    File sound = new File("./sound/01 Space Invaders Extreme - Menu Song.wav");
     try{
       musicClip = AudioSystem.getClip();
       musicClip.open(AudioSystem.getAudioInputStream(sound));
@@ -61,7 +61,7 @@ public class Sound{
   }
   
   void playUFO(){ //plays the sound used when the ufo is flying, loops the clips ennough times for the ufo to exit the frame
-    File sound = new File("ufo_highpitch.wav");
+    File sound = new File("./sound/ufo_highpitch.wav");
     try{
       ufoClip = AudioSystem.getClip();
       ufoClip.open(AudioSystem.getAudioInputStream(sound));
@@ -83,7 +83,7 @@ public class Sound{
   }
   
   void playWhatIsLove(){ //plays the bonus sound track played when w is pressed
-    File sound = new File("what is love 8 bit.wav");
+    File sound = new File("./sound/what is love 8 bit.wav");
     try{
       Clip clip = AudioSystem.getClip();
       clip.open(AudioSystem.getAudioInputStream(sound));

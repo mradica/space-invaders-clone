@@ -14,7 +14,7 @@ public class Saucer{
   
   void importPicture(){ //imports the saucer's image, it is in a seperate routine as the drawSacucer method, so the the saucer doesn't lag when repainting
     try{
-      saucerImage = ImageIO.read(new File("saucer.png"));
+      saucerImage = ImageIO.read(new File("./img/saucer.png"));
     }
     catch(Exception e){
       System.out.print("image not read");
